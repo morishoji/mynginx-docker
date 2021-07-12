@@ -1,0 +1,13 @@
+[Unit]
+Description=SSH Tunnel to aws.morishozi.net
+After=network.target
+
+[Service]
+User=morisita
+ExecStart=/usr/bin/ssh -NT awstun
+
+RestartSec=3
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

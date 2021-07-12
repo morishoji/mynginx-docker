@@ -1,0 +1,9 @@
+Host awstun
+        HostName 35.74.104.104
+        IdentityFile    ~/.ssh/id_rsa_aws
+        User ec2-user
+        ServerAliveInterval     60
+        RemoteForward 8080 localhost:80
+        RemoteForward 2222 localhost:22
+        RemoteForward 1143 localhost:143
+        ExitOnForwardFailure yes
